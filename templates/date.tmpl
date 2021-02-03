@@ -1,0 +1,13 @@
+<div class="mb-3">
+    <label for="{INPUTID}" class="form-label">{TITLE}</label>
+    <input type="textdate" class="form-control" id="{INPUTID}" value="{DEFAULT}" {REQUIRED}>
+</div> 
+ 
+<script>
+    window.onload = function(){
+        $("#{INPUTID}").datepicker( {
+            dateFormat: "dd.mm.yy"
+        } );
+    };
+</script>
+
