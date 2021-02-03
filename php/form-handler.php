@@ -8,7 +8,6 @@ $name = $country = $city = $street = $apartment = $deliveryDate = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_POST = json_decode(file_get_contents('php://input'), true); //decode JSON into POST
-    var_dump ($_POST);
     $name = test_input($_POST["name"]);
     $country = test_input($_POST["country"]);
     $city = test_input($_POST["city"]);
